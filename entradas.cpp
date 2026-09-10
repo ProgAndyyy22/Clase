@@ -1,7 +1,4 @@
-// Nombre: [Completa tu nombre completo aqui]
-// Deber 2 - Ejercicio 1: entradas.cpp
-// Tema: tipos de datos, entrada y salida de datos
-
+// Nombre: Andy Araque
 #include <iostream>
 #include <string>
 
@@ -14,12 +11,11 @@ int main() {
     double numeroPI = 3.14159;
     bool esFinDeSemana = false;
 
-    // Variables donde se guardaran los datos ingresados por el usuario
     string nombre, apellido, carrera, gustoCarrera, comidaFavorita, fraseCelebre;
     int edad;
     double altura;
 
-    // Solicitar e ingresar los datos por terminal
+    
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
 
@@ -28,7 +24,7 @@ int main() {
 
     cout << "Ingrese su edad: ";
     cin >> edad;
-    cin.ignore(); // limpia el salto de linea que queda en el buffer antes del proximo getline
+    cin.ignore(); 
 
     cout << "Ingrese su altura (en metros): ";
     cin >> altura;
@@ -46,7 +42,6 @@ int main() {
     cout << "Ingrese una frase celebre con la que se sienta identificado/a: ";
     getline(cin, fraseCelebre);
 
-    // Mostrar un unico texto que combina los datos iniciales y los ingresados
     cout << R"(
 *********************
 )";
@@ -66,7 +61,4 @@ int main() {
     return 0;
 }
 
-// Aprendizaje: [completa aqui con tus propias palabras lo que aprendiste: diferencia entre
-// cin y getline, por que hace falta cin.ignore() despues de un cin >> antes de un getline,
-// y como se usa un literal de cadena multilinea con cout]
-
+// 
