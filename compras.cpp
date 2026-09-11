@@ -19,13 +19,13 @@ int main() {
     cout << "Ingrese el precio unitario: ";
     cin >> precioUnitario;
 
-    cout << "Es un producto de importacion? (1 = Si, 0 = No): ";
+    cout << "Es un producto de importacion? (Si= 1 , No= 0): ";
     cin >> esImportado;
 
-    cout << "Es un producto industrial? (1 = Si, 0 = No): ";
+    cout << "Es un producto industrial? (Si= 1 , No= 0): ";
     cin >> esIndustrial;
 
-    cout << "Es un producto basico? (1 = Si, 0 = No): ";
+    cout << "Es un producto basico? (Si= 1 , No= 0): ";
     cin >> esBasico;
 
     cout << "Ingrese las unidades compradas: ";
@@ -33,7 +33,7 @@ int main() {
 
     float valorBase = precioUnitario * unidades;
 
-    // --- Determinar el IVA, evaluando las condiciones en el orden indicado ---
+   // se verificara si aplica IVA 
     bool aplicaIVA;
     float porcentajeIVA;
 
@@ -48,7 +48,7 @@ int main() {
         porcentajeIVA = 15;
     }
 
-    // --- Determinar el ICE, evaluando las condiciones en el orden indicado ---
+    // determinar el ICE,
     bool aplicaICE;
     float porcentajeICE;
 
@@ -95,4 +95,6 @@ int main() {
     return 0;
 }
 
-// 
+/* Aprendí el manejo de los condicionales y operadores lógicos, me pregunté si usando switch se puede mejorarse el código
+pienso que no porque switch es eficiente cuando hay muchos casos, como aprendí en clase, y me gusto aprender códigos
+como el uso de el analizador estatico ? para hacer del codigo mucho mas limpio */
