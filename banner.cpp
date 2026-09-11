@@ -1,6 +1,4 @@
-// Nombre: [Completa tu nombre completo aqui]
-// Deber 2 - Ejercicio 2: banner.cpp
-// Tema: operadores, entrada y salida de datos, comparaciones y condicionales
+// Andy Araque
 
 #include <iostream>
 
@@ -11,7 +9,7 @@ int main() {
     cout << "Ingrese el codigo banner (cantidad de dinero en la cuenta): ";
     cin >> codigoBanner;
 
-    // Se va descomponiendo el monto de mayor a menor denominacion usando / y %
+
     int restante = codigoBanner;
 
     int billetes105 = restante / 105;
@@ -47,6 +45,6 @@ int main() {
     return 0;
 }
 
-// Aprendizaje: [completa aqui con tus propias palabras lo que aprendiste: como la division
-// entera (/) y el modulo (%) permiten descomponer una cantidad en partes de mayor a menor
-// valor, y por que el orden de las denominaciones importa para que el resultado sea correcto]
+// Este programa me enseño como integrar un problema de descomponer el dinero en billetes de diferentes denominaciones con programación.
+// El uso de modulos y divisiones son indispensables para el objetivo y se puede desarrollar esa logica en C++
+// Tambien aprendí que en C++ hay que tomar en cuenta nuestras variables y como pueden cambiar dependiendo del proposito que se tenga 
