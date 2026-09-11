@@ -5,11 +5,11 @@
 using namespace std;
 
 int main() {
-    // Datos generales o conocidos de antemano
-    int anioActual = 2026;
-    string mesActual = "septiembre";
-    double numeroPI = 3.14159;
-    bool esFinDeSemana = false;
+
+    int año = 2026;
+    string mes = "septiembre";
+    double numeroEuler = 2.71828;
+    bool EstamosEnEcuador = true;
 
     string nombre, apellido, carrera, gustoCarrera, comidaFavorita, fraseCelebre;
     int edad;
@@ -45,16 +45,16 @@ int main() {
     cout << R"(
 *********************
 )";
-    cout << "Estamos en el ano " << anioActual << ", en el mes de " << mesActual << ".\n";
-    cout << "Actualmente la oracion 'Estamos en fin de semana' es: " << boolalpha << esFinDeSemana << "\n";
-    cout << "El valor de PI que conocemos es: " << numeroPI << "\n\n";
+    cout << "Es el año " << año << ", en el mes de " << mes << ".\n";
+    cout << "Tu ubicación es Ecuador  : " << boolalpha << EstamosEnEcuador << "\n";
+    cout << "La aproximación del número de Euler, un número interesante es:  " << numeroEuler << "\n\n";
 
-    cout << "Me llamo " << nombre << " " << apellido << ", tengo " << edad
-         << " anios, mido " << altura << " m de altura.\n";
-    cout << "Estoy estudiando la carrera de " << carrera
-         << " y la escogi porque me gusta " << gustoCarrera << ".\n";
-    cout << "Mi comida favorita es " << comidaFavorita << ".\n";
-    cout << "La frase con la que me siento identificado/a es: \"" << fraseCelebre << "\"\n";
+    cout << "Es un gusto saludarte, " << nombre << " " << apellido << ", tienes " << edad
+         << " actualmente mides " << altura << " metros.\n";
+    cout << "Tu carrera en la USFQ es" << carrera
+         << " y la escogiste porque p:" << gustoCarrera << ".\n";
+    cout << "Tu comida favorita es " << comidaFavorita << ".\n";
+    cout << "La frase con la que te sientes identificado/a es: \"" << fraseCelebre << "\"\n";
     cout << R"(*********************
 )";
 
