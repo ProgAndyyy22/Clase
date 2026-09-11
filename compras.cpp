@@ -1,6 +1,5 @@
-// Nombre: [Completa tu nombre completo aqui]
-// Deber 2 - Ejercicio 3: compras.cpp
-// Tema: operadores, comparaciones y condicionales
+// Andy Araque
+
 
 #include <iostream>
 #include <string>
@@ -96,6 +95,4 @@ int main() {
     return 0;
 }
 
-// Aprendizaje: [completa aqui con tus propias palabras lo que aprendiste: por que la
-// condicion de "basico" se evalua primero y "cierra" la decision, la diferencia entre
-// && y ||, y como el operador ternario ?: resume un if/else en una sola linea]
+// 
