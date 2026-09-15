@@ -57,10 +57,8 @@ cout << "* El total de ingresos generados por ventas de entradas es: "<<TotalVen
 cout << "* El IVA que se debe pagar es: "<< IVA  << " \n*" << endl;
 cout << "* El gasto total para atender a todos los invitados es: " << GastoTotal << " \n*" << endl;
 
-if(Ganancia >= 0){
-    cout<< "* La empresa obtuvo una utilidad de: " << Ganancia << endl;
-}
-else{cout<< "* La empresa obtuvo una perdida de: " << Ganancia << endl;}
+    cout<< "* La ganancia (o perdida si es negativo es de): " << Ganancia << endl;
+
 
     cout << "__________________________________________________________" << endl;
     cout << "__________________________________________________________ \n" << endl;

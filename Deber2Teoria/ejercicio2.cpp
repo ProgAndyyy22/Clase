@@ -47,7 +47,7 @@ cout << "El volumen de bolitas de poliestireno para llenar la caja es: " << Volu
 
 
 Peso= VolumenCaja*Poliestiero+Peso*NumeroLatas;
-cout << "El peso total de la caja es: " << Peso << " g \n" << endl; 
+cout << "El peso total de la caja (Latas +Poliestireno) es: " << Peso << " g \n" << endl; 
 
 cout <<R"(-----------------------------------------)" << "\n" << endl;
 
