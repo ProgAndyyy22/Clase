@@ -44,7 +44,7 @@ descuento. */
     float TotalVentas= (PrecioDeEntrada/2)*TerceraEdad+(PrecioDeEntrada*0.9)*1.15*Medicos+(PrecioDeEntrada)*1.15*PG;
     IVA= (PrecioDeEntrada*0.9)*0.15*Medicos+(PrecioDeEntrada)*0.15*PG; 
 
-//Aunque los de la tercera Edad no paguen IVA el dueño debe cubrir ese gasto??
+
 
     float GastoTotal= NumeroInvitados*CostoDelPaquete;
 
