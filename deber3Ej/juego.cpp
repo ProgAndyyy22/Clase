@@ -5,8 +5,6 @@
 #include <cctype>
 using namespace std;
 
-// Valor centinela: dato que el usuario nunca podria escoger como opcion real,
-// asi que sirve para saber si un campo todavia no ha sido llenado.
 const string SIN_ASIGNAR = "N/A";
 
 void menuClase(string &clase) {
