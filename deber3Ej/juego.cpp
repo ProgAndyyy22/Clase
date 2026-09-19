@@ -1,141 +1,9 @@
-// Andy Araque
-
 #include <iostream>
 #include <string>
-#include <cctype>
 using namespace std;
 
-const string SIN_ASIGNAR = "N/A";
-
-void menuClase(string &clase) {
-    bool salir = false;
-    while (!salir) {
-        cout << "\n--- Seleccion de clase ---" << endl;
-        cout << "1. Hechicero/a" << endl;
-        cout << "2. Mago/a" << endl;
-        cout << "3. Asesino/a" << endl;
-        cout << "4. Luchador/a" << endl;
-        cout << "5. Sanador/a" << endl;
-        cout << "6. Regresar" << endl;
-        cout << "Elige una opcion: ";
-
-        int opcion;
-        cin >> opcion;
-
-        switch (opcion) {
-            case 1: clase = "Hechicero/a"; salir = true; break;
-            case 2: clase = "Mago/a"; salir = true; break;
-            case 3: clase = "Asesino/a"; salir = true; break;
-            case 4: clase = "Luchador/a"; salir = true; break;
-            case 5: clase = "Sanador/a"; salir = true; break;
-            case 6: salir = true; break;
-            default:
-                cout << "Opcion invalida, intenta de nuevo." << endl;
-        }
-    }
-}
-
-void menuArma(string &arma) {
-    bool salir = false;
-    while (!salir) {
-        cout << "\n--- Seleccion de arma ---" << endl;
-        cout << "1. Hacha" << endl;
-        cout << "2. Baculo" << endl;
-        cout << "3. Pistola y cuchillo" << endl;
-        cout << "4. Maza y escudo" << endl;
-        cout << "5. Grimorio" << endl;
-        cout << "6. Regresar" << endl;
-        cout << "Elige una opcion: ";
-
-        int opcion;
-        cin >> opcion;
-
-        switch (opcion) {
-            case 1: arma = "Hacha"; salir = true; break;
-            case 2: arma = "Baculo"; salir = true; break;
-            case 3: arma = "Pistola y cuchillo"; salir = true; break;
-            case 4: arma = "Maza y escudo"; salir = true; break;
-            case 5: arma = "Grimorio"; salir = true; break;
-            case 6: salir = true; break;
-            default:
-                cout << "Opcion invalida, intenta de nuevo." << endl;
-        }
-    }
-}
-
-void menuMapa(string &mapa) {
-    bool salir = false;
-    while (!salir) {
-        cout << "\n--- Seleccion de mapa ---" << endl;
-        cout << "1. Infierno" << endl;
-        cout << "2. Acantilados venenosos" << endl;
-        cout << "3. Desierto helado" << endl;
-        cout << "4. Zona de cuarentena 45" << endl;
-        cout << "5. Estacion Neptuno" << endl;
-        cout << "6. Regresar" << endl;
-        cout << "Elige una opcion: ";
-
-        int opcion;
-        cin >> opcion;
-
-        switch (opcion) {
-            case 1: mapa = "Infierno"; salir = true; break;
-            case 2: mapa = "Acantilados venenosos"; salir = true; break;
-            case 3: mapa = "Desierto helado"; salir = true; break;
-            case 4: mapa = "Zona de cuarentena 45"; salir = true; break;
-            case 5: mapa = "Estacion Neptuno"; salir = true; break;
-            case 6: salir = true; break;
-            default:
-                cout << "Opcion invalida, intenta de nuevo." << endl;
-        }
-    }
-}
-
-void menuNombre(string &nombre) {
-    bool salir = false;
-    while (!salir) {
-        cout << "\n--- Seleccion de nombre ---" << endl;
-        cout << "1. Ingresar nombre" << endl;
-        cout << "2. Regresar" << endl;
-        cout << "Elige una opcion: ";
-
-        int opcion;
-        cin >> opcion;
-
-        switch (opcion) {
-            case 1:
-                cout << "Ingresa el nombre de tu personaje: ";
-                cin >> nombre;
-                salir = true;
-                break;
-            case 2:
-                salir = true;
-                break;
-            default:
-                cout << "Opcion invalida, intenta de nuevo." << endl;
-        }
-    }
-}
-
-void mostrarPendientes(const string &clase, const string &arma, const string &mapa, const string &nombre) {
-    bool clasePendiente = (clase == SIN_ASIGNAR);
-    bool armaPendiente = (arma == SIN_ASIGNAR);
-    bool mapaPendiente = (mapa == SIN_ASIGNAR);
-    bool nombrePendiente = (nombre == SIN_ASIGNAR);
-
-    if (!clasePendiente && !armaPendiente && !mapaPendiente && !nombrePendiente) {
-        cout << "Ya tienes todos los datos completos. Tu personaje esta listo para registrarse." << endl;
-        return;
-    }
-
-    cout << "Actualmente tienes pendiente las siguientes personalizaciones:" << endl;
-    if (clasePendiente)  cout << "Seleccion de clase" << endl;
-    if (armaPendiente)   cout << "Seleccion de arma" << endl;
-    if (mapaPendiente)   cout << "Seleccion de mapa" << endl;
-    if (nombrePendiente) cout << "Seleccion de nombre" << endl;
-}
-
 int main() {
+    const string SIN_ASIGNAR = "N/A";
     string clase  = SIN_ASIGNAR;
     string arma   = SIN_ASIGNAR;
     string mapa   = SIN_ASIGNAR;
@@ -148,44 +16,128 @@ int main() {
         cout << "Bienvenido al programa de creacion de tu personaje!" << endl;
         cout << "Antes de comenzar, es necesario que completes tu personaje." << endl;
         cout << "Elige una de las siguientes opciones a continuacion:" << endl;
-        cout << "A. Seleccion de clase" << endl;
-        cout << "B. Seleccion de arma" << endl;
-        cout << "C. Seleccion de mapa" << endl;
-        cout << "D. Seleccion de nombre" << endl;
-        cout << "E. Guardar y registrar personaje" << endl;
-        cout << "F. No guardar y salir" << endl;
-        cout << endl;
+        cout << "A. Seleccion de clase\nB. Seleccion de arma\nC. Seleccion de mapa\nD. Seleccion de nombre" << endl;
+        cout << "E. Guardar y registrar personaje\nF. No guardar y salir\n" << endl;
 
-        mostrarPendientes(clase, arma, mapa, nombre);
+        // La logica de mostrar pendientes se evalua directamente aqui
+        if (clase != SIN_ASIGNAR && arma != SIN_ASIGNAR && mapa != SIN_ASIGNAR && nombre != SIN_ASIGNAR) {
+            cout << "Ya tienes todos los datos completos. Tu personaje esta listo para registrarse." << endl;
+        } else {
+            cout << "Actualmente tienes pendiente las siguientes personalizaciones:" << endl;
+            if (clase == SIN_ASIGNAR)  cout << "- Seleccion de clase" << endl;
+            if (arma == SIN_ASIGNAR)   cout << "- Seleccion de arma" << endl;
+            if (mapa == SIN_ASIGNAR)   cout << "- Seleccion de mapa" << endl;
+            if (nombre == SIN_ASIGNAR) cout << "- Seleccion de nombre" << endl;
+        }
 
         cout << "\nOpcion: ";
         char opcion;
         cin >> opcion;
-        opcion = toupper(opcion);
+        
+        // Convertir minuscula a mayuscula restando 32 en codigo ASCII
+        if (opcion >= 'a' && opcion <= 'z') {
+            opcion -= 32; 
+        }
 
         switch (opcion) {
-            case 'A':
-                menuClase(clase);
+            case 'A': {  // Se usan llaves {} para poder declarar variables dentro del case
+                bool salirClase = false;
+                while (!salirClase) {
+                    cout << "\n--- Seleccion de clase ---" << endl;
+                    cout << "1. Hechicero/a\n2. Mago/a\n3. Asesino/a\n4. Luchador/a\n5. Sanador/a\n6. Regresar" << endl;
+                    cout << "Elige una opcion: ";
+                    
+                    int opcClase;
+                    cin >> opcClase;
+                    
+                    switch (opcClase) {
+                        case 1: clase = "Hechicero/a"; salirClase = true; break;
+                        case 2: clase = "Mago/a"; salirClase = true; break;
+                        case 3: clase = "Asesino/a"; salirClase = true; break;
+                        case 4: clase = "Luchador/a"; salirClase = true; break;
+                        case 5: clase = "Sanador/a"; salirClase = true; break;
+                        case 6: salirClase = true; break;
+                        default: cout << "Opcion invalida, intenta de nuevo." << endl;
+                    }
+                }
                 break;
-            case 'B':
-                menuArma(arma);
+            }
+            case 'B': {
+                bool salirArma = false;
+                while (!salirArma) {
+                    cout << "\n--- Seleccion de arma ---" << endl;
+                    cout << "1. Hacha\n2. Baculo\n3. Pistola y cuchillo\n4. Maza y escudo\n5. Grimorio\n6. Regresar" << endl;
+                    cout << "Elige una opcion: ";
+                    
+                    int opcArma;
+                    cin >> opcArma;
+                    
+                    switch (opcArma) {
+                        case 1: arma = "Hacha"; salirArma = true; break;
+                        case 2: arma = "Baculo"; salirArma = true; break;
+                        case 3: arma = "Pistola y cuchillo"; salirArma = true; break;
+                        case 4: arma = "Maza y escudo"; salirArma = true; break;
+                        case 5: arma = "Grimorio"; salirArma = true; break;
+                        case 6: salirArma = true; break;
+                        default: cout << "Opcion invalida, intenta de nuevo." << endl;
+                    }
+                }
                 break;
-            case 'C':
-                menuMapa(mapa);
+            }
+            case 'C': {
+                bool salirMapa = false;
+                while (!salirMapa) {
+                    cout << "\n--- Seleccion de mapa ---" << endl;
+                    cout << "1. Infierno\n2. Acantilados venenosos\n3. Desierto helado\n4. Zona de cuarentena 45\n5. Estacion Neptuno\n6. Regresar" << endl;
+                    cout << "Elige una opcion: ";
+                    
+                    int opcMapa;
+                    cin >> opcMapa;
+                    
+                    switch (opcMapa) {
+                        case 1: mapa = "Infierno"; salirMapa = true; break;
+                        case 2: mapa = "Acantilados venenosos"; salirMapa = true; break;
+                        case 3: mapa = "Desierto helado"; salirMapa = true; break;
+                        case 4: mapa = "Zona de cuarentena 45"; salirMapa = true; break;
+                        case 5: mapa = "Estacion Neptuno"; salirMapa = true; break;
+                        case 6: salirMapa = true; break;
+                        default: cout << "Opcion invalida, intenta de nuevo." << endl;
+                    }
+                }
                 break;
-            case 'D':
-                menuNombre(nombre);
+            }
+            case 'D': {
+                bool salirNombre = false;
+                while (!salirNombre) {
+                    cout << "\n--- Seleccion de nombre ---" << endl;
+                    cout << "1. Ingresar nombre\n2. Regresar" << endl;
+                    cout << "Elige una opcion: ";
+                    
+                    int opcNombre;
+                    cin >> opcNombre;
+                    
+                    switch (opcNombre) {
+                        case 1:
+                            cout << "Ingresa el nombre de tu personaje: ";
+                            cin >> nombre;
+                            salirNombre = true;
+                            break;
+                        case 2: 
+                            salirNombre = true; 
+                            break;
+                        default: 
+                            cout << "Opcion invalida, intenta de nuevo." << endl;
+                    }
+                }
                 break;
+            }
             case 'E':
                 if (clase == SIN_ASIGNAR || arma == SIN_ASIGNAR || mapa == SIN_ASIGNAR || nombre == SIN_ASIGNAR) {
                     cout << "\nAun te falta completar informacion antes de poder registrar tu personaje." << endl;
                 } else {
                     cout << "\nPersonaje creado con exito!" << endl;
-                    cout << "Resumen del personaje:" << endl;
-                    cout << "Nombre: " << nombre << endl;
-                    cout << "Clase: " << clase << endl;
-                    cout << "Arma: " << arma << endl;
-                    cout << "Mapa: " << mapa << endl;
+                    cout << "Resumen del personaje:\nNombre: " << nombre << "\nClase: " << clase;
+                    cout << "\nArma: " << arma << "\nMapa: " << mapa << endl;
                     programaActivo = false;
                 }
                 break;
@@ -200,5 +152,3 @@ int main() {
 
     return 0;
 }
-
-// 
