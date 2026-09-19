@@ -1,3 +1,5 @@
+//Andy Araque
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -19,7 +21,7 @@ int main() {
         cout << "A. Seleccion de clase\nB. Seleccion de arma\nC. Seleccion de mapa\nD. Seleccion de nombre" << endl;
         cout << "E. Guardar y registrar personaje\nF. No guardar y salir\n" << endl;
 
-        // La logica de mostrar pendientes se evalua directamente aqui
+    
         if (clase != SIN_ASIGNAR && arma != SIN_ASIGNAR && mapa != SIN_ASIGNAR && nombre != SIN_ASIGNAR) {
             cout << "Ya tienes todos los datos completos. Tu personaje esta listo para registrarse." << endl;
         } else {
@@ -34,13 +36,10 @@ int main() {
         char opcion;
         cin >> opcion;
         
-        // Convertir minuscula a mayuscula restando 32 en codigo ASCII
-        if (opcion >= 'a' && opcion <= 'z') {
-            opcion -= 32; 
-        }
+
 
         switch (opcion) {
-            case 'A': {  // Se usan llaves {} para poder declarar variables dentro del case
+            case 'A': { 
                 bool salirClase = false;
                 while (!salirClase) {
                     cout << "\n--- Seleccion de clase ---" << endl;
@@ -152,3 +151,5 @@ int main() {
 
     return 0;
 }
+
+// Practique el uso de bucles while y switch-case para crear un menu interactivo que permita al usuario personalizar un personaje de juego. Se implementaron validaciones para asegurar que el usuario complete todos los campos antes de guardar el personaje, y se proporcionaron opciones para regresar a los menus anteriores o salir del programa sin guardar.
