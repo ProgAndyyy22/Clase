@@ -201,9 +201,4 @@ int main() {
     return 0;
 }
 
-// Aprendizaje adquirido: practique el diseno de un sistema de menus anidados usando una
-// funcion distinta por cada seccion, el paso de variables por referencia para modificar
-// el estado del personaje directamente desde cada submenu, y el uso de un valor centinela
-// (SIN_ASIGNAR) para saber que campos faltan por completar sin necesitar variables
-// booleanas adicionales para cada uno.
-
+// 
