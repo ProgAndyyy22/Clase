@@ -1,0 +1,3 @@
+cd /workspaces/Clase/Deber2Teoria/Deber3Teoria
+g++ ejercicio2.cpp -o ejercicio2
+./ejercicio2
