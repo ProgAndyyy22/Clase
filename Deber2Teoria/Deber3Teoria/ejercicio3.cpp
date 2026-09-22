@@ -50,6 +50,15 @@ if(golesLDU2 > golesFluminense2) {
     puntosFluminense += 1;
 }
 
+
+if(puntosLDU> puntosFluminense) {
+    cout << "El equipo que clasifica es: LDU de Quito" << endl;
+    }
+else{
+    cout << "El equipo que clasifica es: Fluminense de Rio de Janeiro" << endl;
+    }
+
+
 cout << "Puntos LDU: " << puntosLDU << endl;
 cout << "Puntos Fluminense: " << puntosFluminense << endl;
 cout << "Goles a favor LDU: " << golesLDU1 + golesLDU2 << endl;
@@ -58,6 +67,8 @@ cout << "Goles en contra LDU: " << golesFluminense1 + golesFluminense2 << endl;
 cout << "Goles en contra Fluminense: "<< golesLDU1 + golesLDU2 << endl;
 cout << "Gol de diferencia LDU: " << (golesLDU1 + golesLDU2) - (golesFluminense1 + golesFluminense2) << endl;
 cout << "Gol de diferencia Fluminense: " << (golesFluminense1 + golesFluminense2) - (golesLDU1 + golesLDU2) << endl;
+cout << "Goles convertidos como visitante LDU: " << golesLDU1 << endl;
+cout << "Goles convertidos como visitante Fluminense: " << golesFluminense2 << endl;
 
 bool HuboPenales= false;
 if(puntosLDU == puntosFluminense) {
@@ -74,17 +85,8 @@ if (golesDiferencia1 + golesDiferencia2 > 0) {
 } else {
     HuboPenales = true;
     cout << "Hubo empate en puntos y goles, se debe definir por penales." << endl;
-
-}
-else {
-    cout << "El equipo que clasifica es: ";
-    if(puntosLDU > puntosFluminense) {
-        cout << "LDU de Quito" << endl;
-    } else {
-        cout << "Fluminense de Rio de Janeiro" << endl;
-    }
 }
 
-
+}
 return 0;    
 }
