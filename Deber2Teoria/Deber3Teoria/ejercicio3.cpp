@@ -54,7 +54,7 @@ if(golesLDU2 > golesFluminense2) {
 if(puntosLDU> puntosFluminense) {
     cout << "El equipo que clasifica es: LDU de Quito" << endl;
     }
-else{
+else if(puntosFluminense> puntosLDU){
     cout << "El equipo que clasifica es: Fluminense de Rio de Janeiro" << endl;
     }
 
@@ -67,8 +67,6 @@ cout << "Goles en contra LDU: " << golesFluminense1 + golesFluminense2 << endl;
 cout << "Goles en contra Fluminense: "<< golesLDU1 + golesLDU2 << endl;
 cout << "Gol de diferencia LDU: " << (golesLDU1 + golesLDU2) - (golesFluminense1 + golesFluminense2) << endl;
 cout << "Gol de diferencia Fluminense: " << (golesFluminense1 + golesFluminense2) - (golesLDU1 + golesLDU2) << endl;
-cout << "Goles convertidos como visitante LDU: " << golesLDU1 << endl;
-cout << "Goles convertidos como visitante Fluminense: " << golesFluminense2 << endl;
 
 bool HuboPenales= false;
 if(puntosLDU == puntosFluminense) {
@@ -82,11 +80,30 @@ if (golesDiferencia1 + golesDiferencia2 > 0) {
     cout << "El equipo que clasifica es: LDU de Quito" << endl;
 } else if (golesDiferencia1 + golesDiferencia2 < 0) {
     cout << "El equipo que clasifica es: Fluminense de Rio de Janeiro" << endl;
-} else {
+} else if (golesLDU1>golesFluminense2) {
+    cout << "El equipo que clasifica es: LDU de Quito por más goles como visitante" << endl;
+} else if (golesFluminense2>golesLDU1) {
+    cout << "El equipo que clasifica es: Fluminense de Rio de Janeiro por más goles como visitante" << endl;
+}
+else {
     HuboPenales = true;
     cout << "Hubo empate en puntos y goles, se debe definir por penales." << endl;
+
+    cout << "Ingrese los goles de LDU en penales: "; cin >> golesLDU1;
+    cout << "Ingrese los goles de Fluminense en penales: "; cin >> golesFluminense1;
+
+    if(HuboPenales && (golesLDU1>5 || golesFluminense1>5)){
+        cout << "Los goles de penales no pueden ser mayores a 5." << endl;
+    } else {
+        if(golesLDU1 > golesFluminense1) {
+            cout << "El equipo que clasifica es: LDU de Quito" << endl;
+        } else if (golesLDU1 < golesFluminense1) {
+            cout << "El equipo que clasifica es: Fluminense de Rio de Janeiro (Ganador por penales)" << endl;
+        } else {
+            cout << "Hubo empate en penales, ningun equipo clasifica." << endl;
+        }
 }
 
-}
+}}
 return 0;    
 }
