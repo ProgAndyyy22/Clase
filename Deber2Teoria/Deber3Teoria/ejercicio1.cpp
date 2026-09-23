@@ -19,6 +19,7 @@ else{
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
     cout<<"El triangulo no es valido"<< endl;
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
+    return 0
 }
 
 
@@ -34,7 +35,7 @@ else if(lado1!=lado2 && lado1!=lado3 && lado2!=lado3){
 }
 else{
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
-    cout<<"El triangulo no es un triangulo rectangulo"<< endl;
+    cout<<"El triangulo es un triangulo equilatero"<< endl;
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
 }
 
