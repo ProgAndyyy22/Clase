@@ -15,7 +15,7 @@ cout << "Ingrese la nota de la primera consulta"<< endl; cin>>nota1;
 cout << "Ingrese la nota de la segunda consulta"<< endl; cin>> nota2;
 cout << "Ingrese la nota del trabajo de medio semestre"<< endl; cin>> nota3;
 cout << "Ingrese la nota del proyecto final"<< endl; cin>> nota4;
-
+// el orden de las notas aparece de menor a mayor debido al for
 int i{2}; 
 for(i<=20; i++;){
 if(factor*i==nota1){existe1=true; cout<< "Consulta 1: "<< nota1<< endl;}
@@ -30,7 +30,7 @@ if(existe3==false){cout << "La nota del proyecto final no se ingreso correctamen
 
 if(existe1 && existe2 && existe3 && existe4){
     PromedioConsultas=((nota1+nota2)/2.0);
-    NotaFinal=PromedioConsultas*30.0/100.00+ nota3*30.0/100.0+ nota4*60.0/100.0;
+    NotaFinal=(PromedioConsultas*30.0/100.00+ nota3*30.0/100.0+ nota4*40.0/100.0)*10;
 
     if((91.0<=NotaFinal)){
     cout << "La nota final es: "<< "A, sobresaliente";}
