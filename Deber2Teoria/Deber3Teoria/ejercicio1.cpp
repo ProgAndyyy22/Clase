@@ -19,7 +19,7 @@ else{
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
     cout<<"El triangulo no es valido"<< endl;
     cout<< R"(--------------------------------------)"<<"\n"<<endl;
-    return 0
+    return 0;
 }
 
 
