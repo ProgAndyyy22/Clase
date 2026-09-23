@@ -4,7 +4,7 @@ using namespace std;
 
 int main( ) {
 int edad1, edad2, edad3;
-float precioBoleto;
+float precioBoleto{0}, valorTotal{0};
 cout << "Ingrese la edad de la primera persona: ";
 cin >> edad1;
 cout << "Ingrese la edad de la segunda persona: ";
@@ -40,7 +40,8 @@ if(EntraCine2){BoletosAdultos+=1;}
 if(EntraCine3){BoletosAdultos+=1;}
 
 
-if((edad1<8)|(edad2<8)|(edad3<8)){cout << "Hay niños menores de 8 años, la familia cancela ir al cine"<<endl;}
+if((edad1<8)|(edad2<8)|(edad3<8)){cout << "Hay niños menores de 8 años, la familia cancela ir al cine"<<endl;
+VanAlCine=false;}
 
 else if (EntraPersona1Sala && EntraPersona2Sala && EntraPersona3Sala ) {
 cout << "Las tres personas solo pueden ir a la sala de entretenimiento (son menores de edad), no tiene sentido ir al cine." << endl;
@@ -68,11 +69,19 @@ cout << "Hay un menor de edad, y un adulto tiene que acompañarlos a la sala de 
         else{cout<<"La primera persona va a acompañar al menor de edad"<<endl;if(esAnciano2){BoletosAncianos+=1;}; if(EntraCine2){BoletosAdultos+=1;}}}
 }
 
-
+if(VanAlCine){
 cout << "\nVan a entrar: "<< BoletosAdultos+BoletosAncianos+BoletosMenores<< endl;
 cout << "Van a la sala de entreteniemiento: "<< BoletosMenores<< endl;
 cout << "Van a la sala de cine: "<< BoletosAncianos+BoletosAdultos<< endl;
+cout << "_______________________________________________________________________________________________________"<< endl;
+valorTotal = (BoletosMenores * precioBoleto * 0.70f) + (BoletosAncianos * precioBoleto * 0.50f) + (BoletosAdultos * precioBoleto);
+
+cout <<"\nEl precio total es: "<< valorTotal<< endl;
+
+}
     //
+
+
 
 
 
