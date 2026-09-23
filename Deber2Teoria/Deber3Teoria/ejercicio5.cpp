@@ -18,15 +18,16 @@ cout << "Ingrese la nota del proyecto final"<< endl; cin>> nota4;
 
 int i{2}; 
 for(i<=20; i++;){
-if(factor*i==nota1){existe1=true; cout<< "Consulta 1: "<< nota1;}
-if(factor*i==nota2){existe2=true; cout<< "Consulta 2: "<< nota2;}
-if(factor*i==nota3){existe3=true; cout<< "Trabajo de medio semestre: "<< nota3;}
-if(factor*i==nota4){existe4=true; cout<< "Proyecto final: "<< nota4;}
+if(factor*i==nota1){existe1=true; cout<< "Consulta 1: "<< nota1<< endl;}
+if(factor*i==nota2){existe2=true; cout<< "Consulta 2: "<< nota2<< endl;}
+if(factor*i==nota3){existe3=true; cout<< "Trabajo de medio semestre: "<< nota3<< endl;}
+if(factor*i==nota4){existe4=true; cout<< "Proyecto final: "<< nota4<< endl;}
 }
 if(existe1==false){cout << "La nota de la primera consulta no se ingreso correctamente"<< endl;}
 if(existe2==false){cout << "La nota de la segunda consulta no se ingreso correctamente"<< endl;}
 if(existe3==false){cout << "La nota del trabajo de medio semestre no se ingreso correctamente"<< endl;}
 if(existe3==false){cout << "La nota del proyecto final no se ingreso correctamente"<< endl;}
+
 if(existe1 && existe2 && existe3 && existe4){
     PromedioConsultas=((nota1+nota2)/2.0);
     NotaFinal=PromedioConsultas*30.0/100.00+ nota3*30.0/100.0+ nota4*60.0/100.0;
