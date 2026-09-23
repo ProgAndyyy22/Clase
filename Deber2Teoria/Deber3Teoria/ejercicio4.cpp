@@ -40,7 +40,7 @@ if(EntraCine2){BoletosAdultos+=1;}
 if(EntraCine3){BoletosAdultos+=1;}
 
 
-if((edad1<8)|(edad2<8)|(edad3<8)){cout << "Hay niños menores de 8 años, la familia cancela ir al cine"<<endl;
+if((edad1<8)||(edad2<8)||(edad3<8)){cout << "Hay niños menores de 8 años, la familia cancela ir al cine"<<endl;
 VanAlCine=false;}
 
 else if (EntraPersona1Sala && EntraPersona2Sala && EntraPersona3Sala ) {
