@@ -16,7 +16,7 @@ cout << "Ingrese la nota de la segunda consulta"<< endl; cin>> nota2;
 cout << "Ingrese la nota del trabajo de medio semestre"<< endl; cin>> nota3;
 cout << "Ingrese la nota del proyecto final"<< endl; cin>> nota4;
 // el orden de las notas aparece de menor a mayor debido al for
-for(int i=2; i<=20; i++;){
+for(int i=2; i<=20; i++){
 if(factor*i==nota1){existe1=true; cout<< "Consulta 1: "<< nota1<< endl;}
 if(factor*i==nota2){existe2=true; cout<< "Consulta 2: "<< nota2<< endl;}
 if(factor*i==nota3){existe3=true; cout<< "Trabajo de medio semestre: "<< nota3<< endl;}
