@@ -1,3 +1,15 @@
 cd /workspaces/Clase/Deber2Teoria/Deber3Teoria
 g++ ejercicio5.cpp -o ejercicio5
 ./ejercicio5
+
+
+cd /workspaces/Clase/Clase de teoria
+g++ 24septiembre.cpp -o 24septiembre
+./24septiembre
+
+g++ "Clase de teoria/24septiembre.cpp" -o "Clase de teoria/24septiembre"
+./"Clase de teoria/24septiembre"
+
+cd "Clase de teoria"
+g++ 24septiembre.cpp -o 24septiembre
+./24septiembre

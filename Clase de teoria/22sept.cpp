@@ -13,11 +13,11 @@ int main(){
 
 
 
-    desde= num;
+    num= desde;
 while (num <= hasta){
     int div {1};
-    int n{1};
-	while(div<=num && !(n==2 && div!=num) ){
+    int n{0};
+	while(div<=num /* && !(n==2 && div!=num) */){
     //////////////////////////////////////////////
 		if (num % div==0){
         //cout << "cuenta: "<< n << endl;
@@ -25,12 +25,12 @@ while (num <= hasta){
         if (n==2 && div!=num){break;}
 
 
-        div= div+1;
-	    if (n==2)
+        div= div+1;}
+	    if (div*div > num)
         cout<<num << "\t";
 			// cout<< n<<"."<< div<< endl;
            n++;
-		}
+		
     num++;
 
 	}
@@ -39,4 +39,4 @@ while (num <= hasta){
     ////////////////////////////////////////////    
     return 0;
 	
-}
+} 
