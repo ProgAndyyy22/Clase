@@ -1,3 +1,6 @@
+// Autor: Andy Araque
+// Fecha: 29 septiembre
+
 #include <iostream>
 using namespace std;
 
