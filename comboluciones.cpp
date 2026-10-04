@@ -16,29 +16,29 @@ std::vector<long long> multiplicarPolinomios(const std::vector<long long>& P1, c
 }
 
 int main() {
-    int max_grado = 200;
+    int objetivo = 121;
 
-    std::vector<long long> polinomio5(max_grado + 1, 0);
-    for (int i = 0; i <= max_grado; i += 5) {
-        polinomio5[i] = 1;
-    }
+    std::vector<long long> p1(objetivo + 1, 0);
+    for (int i = 0; i <= objetivo; i += 1) p1[i] = 1;
 
-    std::vector<long long> polinomio8(max_grado + 1, 0);
-    for (int i = 0; i <= max_grado; i += 8) {
-        polinomio8[i] = 1;
-    }
+    std::vector<long long> p2(objetivo + 1, 0);
+    for (int i = 0; i <= objetivo; i += 2) p2[i] = 1;
 
-    std::vector<long long> polinomio16(max_grado + 1, 0);
-    for (int i = 0; i <= max_grado; i += 16) {
-        polinomio16[i] = 1;
-    }
+    std::vector<long long> p10(objetivo + 1, 0);
+    for (int i = 0; i <= objetivo; i += 10) p10[i] = 1;
 
-    std::vector<long long> parcial = multiplicarPolinomios(polinomio5, polinomio8, max_grado);
-    std::vector<long long> final = multiplicarPolinomios(parcial, polinomio16, max_grado);
+    std::vector<long long> p25(objetivo + 1, 0);
+    for (int i = 0; i <= objetivo; i += 25) p25[i] = 1;
 
-    for (int i = 50; i <= max_grado; ++i) {
-        std::cout << i << " : " << final[i] << "\n";
-    }
+    std::vector<long long> p50(objetivo + 1, 0);
+    for (int i = 0; i <= objetivo; i += 50) p50[i] = 1;
+
+    std::vector<long long> m1 = multiplicarPolinomios(p1, p2, objetivo);
+    std::vector<long long> m2 = multiplicarPolinomios(m1, p10, objetivo);
+    std::vector<long long> m3 = multiplicarPolinomios(m2, p25, objetivo);
+    std::vector<long long> final = multiplicarPolinomios(m3, p50, objetivo);
+
+    std::cout << objetivo << " : " << final[objetivo] << "\n";
 
     return 0;
 }
