@@ -1,32 +1,29 @@
+// Andy Araque 
+
 #include <iostream>
 using namespace std;
 
 int main() {
-
     int n;
-
-    cout << "Ingrese un numero: ";
+    cout << "n: ";
     cin >> n;
+    cout << "\n";
 
-    for (int i = 0; i < n; i++) {
+    int dimension_total = n * n;
+    for (int f = 0; f < dimension_total; f++) {
+        for (int c = 0; c < dimension_total; c++) {
+            
+            int bloque_fila = f / n;
+            int bloque_columna = c / n;
 
-        for (int j = 0; j < n; j++) {
-
-            for (int k = 0; k < n; k++) {
-
-                for (int l = 0; l < n; l++) {
-
-                    if (j == i || j == n - i - 1) {
-                        cout << "X";
-                    }
-                    else {
-                        cout << ".";
-                    }
-                }
+        
+            if ((bloque_fila + bloque_columna) % 2 == 0) {
+                cout << "X ";
+            } else {
+                cout << ". ";
             }
-
-            cout << endl;
         }
+        cout << '\n';
     }
 
     return 0;
