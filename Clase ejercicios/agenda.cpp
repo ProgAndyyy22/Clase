@@ -1,3 +1,4 @@
+//Andy Araque
 #include <iostream>
 #include <vector>
 #include <iomanip>
@@ -183,3 +184,5 @@ int main() {
 
     return 0;
 }
+
+// Aprendi el uso de vectores, donde sus elementos pueden ser varios tipos de datos. Tambien me parecio interesante el uso de erase, para cambiar el tamaño de un vector quitando algun elemnto
