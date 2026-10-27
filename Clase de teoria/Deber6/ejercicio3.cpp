@@ -9,9 +9,9 @@ using namespace std;
     cout << x;} */
 
 double redondear(double x, int y){
-int z=1;
+long long z=1;
 for (int i=0; i <=y  ;i++ ){z*=10;}
-int x1= x*z;
+long long x1= x*z;
 int ultimo= x1%10;
 double s= (ultimo>=5) ? ((x1+10.-ultimo)/z):((x1-ultimo+0.0)/(z+0.));
 return s;
