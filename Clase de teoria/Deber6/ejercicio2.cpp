@@ -45,12 +45,14 @@ int j=1;
 
 
     }
-if(a==b){s=-s;}
-else if(a*b<0){s= (a1> a2) ? -a1: -a2;}
-else{s=}
+if(a1!=b1){
+s= (a+b>0)? s:-s;}
+else{s=(a>0)? s:-s;}
+
+
 
     return s;
 }
 
 
-int main(){cout << malasuma(0,0);}
+int main(){cout << malasuma(398,398);}
