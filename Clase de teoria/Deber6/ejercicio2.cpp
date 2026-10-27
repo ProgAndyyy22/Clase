@@ -45,6 +45,10 @@ int j=1;
 
 
     }
+if(a==b){s=-s;}
+else if(a*b<0){s= (a1> a2) ? -a1: -a2;}
+else{s=}
+
     return s;
 }
 
