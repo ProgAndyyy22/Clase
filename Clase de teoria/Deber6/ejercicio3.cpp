@@ -1,8 +1,8 @@
 //Andy Araque
 //25 de octubre de 2026
- #include <iostream>
+ /*#include <iostream>
  #include <iomanip>
-using namespace std;
+using namespace std; */
 
 /*int main(){
     int x=109.736*10;
@@ -18,5 +18,5 @@ return s;
 
 }
 
- int main(){cout << setprecision(10) << redondear(2.784526,10)<<endl;
-cout << 0%10;} 
+/* int main(){cout << setprecision(10) << redondear(2.784526,10)<<endl;
+cout << 0%10;} */

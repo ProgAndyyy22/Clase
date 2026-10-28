@@ -1,7 +1,7 @@
 //Andy Araque
 //25 de octubre de 2026
-#include <iostream>
-using namespace std;
+/*#include <iostream>
+using namespace std;*/
 
 int numeroDeDigitos(int n) {
 
@@ -55,4 +55,4 @@ else{s=(a>0)? s:-s;}
 }
 
 
-int main(){cout << malasuma(398,398);}
+/*int main(){cout << malasuma(398,398);}*/

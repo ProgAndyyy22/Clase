@@ -1,8 +1,8 @@
 //Andy Araque
 //25 de octubre de 2026
 
-#include <iostream>
-using namespace std;
+/*#include <iostream>
+using namespace std;*/
 
 bool es_primo(int n) {
     if (n <= 1) return false;
@@ -27,7 +27,8 @@ for (int i =2 ; i <= n/2; ++i) {
 
 }}
 
-int main() {
+/*int main() {
 
- suma_goldbach(23);
+suma_goldbach(23);
 }
+*/
