@@ -1,3 +1,5 @@
+// Andy Araque
+// 3 Noviembre 
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
