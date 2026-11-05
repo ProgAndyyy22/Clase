@@ -48,7 +48,7 @@ void imprimirDigito(int digito)
             cout << "0   0" << endl;
             cout << "0   0" << endl;
             cout << "0   0" << endl;
-            cout << " 000 " << endl;
+            cout << " 000 \n" << endl;
             break;
 
         case 1:
@@ -56,7 +56,7 @@ void imprimirDigito(int digito)
             cout << " 11  " << endl;
             cout << "  1  " << endl;
             cout << "  1  " << endl;
-            cout << " 111 " << endl;
+            cout << " 111 \n" << endl;
             break;
 
         case 2:
@@ -64,7 +64,7 @@ void imprimirDigito(int digito)
             cout << "2   2" << endl;
             cout << "   2 " << endl;
             cout << "  2  " << endl;
-            cout << " 2222" << endl;
+            cout << " 2222\n" << endl;
             break;
 
         case 3:
@@ -72,7 +72,7 @@ void imprimirDigito(int digito)
             cout << "3   3" << endl;
             cout << "  33 " << endl;
             cout << "3   3" << endl;
-            cout << " 333 " << endl;
+            cout << " 333 \n" << endl;
             break;
 
         case 4:
@@ -80,7 +80,7 @@ void imprimirDigito(int digito)
             cout << "4   4" << endl;
             cout << " 4444" << endl;
             cout << "    4" << endl;
-            cout << "    4" << endl;
+            cout << "    4 \n" << endl;
             break;
 
         case 5:
@@ -88,7 +88,7 @@ void imprimirDigito(int digito)
             cout << "5    " << endl;
             cout << " 555 " << endl;
             cout << "    5" << endl;
-            cout << " 555 " << endl;
+            cout << " 555 \n " << endl;
             break;
 
         case 6:
@@ -96,7 +96,7 @@ void imprimirDigito(int digito)
             cout << "6    " << endl;
             cout << " 666 " << endl;
             cout << "6   6" << endl;
-            cout << " 666 " << endl;
+            cout << " 666 \n" << endl;
             break;
 
         case 7:
@@ -104,7 +104,7 @@ void imprimirDigito(int digito)
             cout << "    7" << endl;
             cout << "   7 " << endl;
             cout << "  7  " << endl;
-            cout << "  7  " << endl;
+            cout << "  7 \n " << endl;
             break;
 
         case 8:
@@ -112,7 +112,7 @@ void imprimirDigito(int digito)
             cout << "8   8" << endl;
             cout << " 888 " << endl;
             cout << "8   8" << endl;
-            cout << " 888 " << endl;
+            cout << " 888 \n" << endl;
             break;
 
         case 9:
@@ -120,7 +120,7 @@ void imprimirDigito(int digito)
             cout << "9   9" << endl;
             cout << " 9999" << endl;
             cout << "    9" << endl;
-            cout << " 999 " << endl;
+            cout << " 999 \n" << endl;
             break;
     }
 }
