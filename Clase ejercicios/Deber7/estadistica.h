@@ -14,4 +14,5 @@ string estado(double prom);
 
 #endif
 
-// Aprendizaje adquirido: ...
+// Aprendi que es bueno utilizar un flujo ordenado para programar, separando las funciones en diferentes archivos y el codigo
+// Tambien a utilizar codigo para manejar archivos de texto, para leer, editar y extraer texto
