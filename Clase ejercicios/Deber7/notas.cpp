@@ -1,3 +1,4 @@
+// Andy Araque
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -126,3 +127,6 @@ int main() {
 
     return 0;
 }
+
+// Aprendi que es bueno utilizar un flujo ordenado para programar, separando las funciones en diferentes archivos y el codigo
+// Tambien a utilizar codigo para manejar archivos de texto, para leer, editar y extraer texto
